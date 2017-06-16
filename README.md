@@ -5,7 +5,7 @@ This project was inspired by deep_cyber.
 
 Credit to https://github.com/sherjilozair/char-rnn-tensorflow for most of the tensorflow code.
 
-Scraping tweets to text:
+## Scraping tweets to text:
 
 I used this script to scrape tweets into a json file https://github.com/taspinar/twitterscraper
 
@@ -17,13 +17,13 @@ Running json_scrape.py will output a text file. Move that file to data/tweets/ a
 
 Now we are ready to start utilizing the RNN to learn how to tweet.
 
-Training the RNN:
+## Training the RNN:
 
 The core of the RNN is based on https://github.com/sherjilozair/char-rnn-tensorflow which in turn was based on code written by Andrej Karpathy. You can find more details on how that works, as well as more info on how to customize the parameters, in that repository.
 
 I used 512 hidden layers (as opposed to the original default of 128) which takes a lot longer to train but allowed me to achieve better results than my first attempt at 128. I am just learning so I do not know what the optimal setup would be at this moment. You can customize these in the train.py file, or input the rnn size as a parameter in the command line. The code is currently set up for 512 layers because that is what I used based on a suggestion from deep_cyber.
 
-Running the training script is fairly simple:
+##### Running the training script is fairly simple:
 
 1) Go to the folder where your files for this project is stored. Default name is deepThorin.
 
@@ -39,11 +39,11 @@ Running the training script is fairly simple:
 
 7) After it is done training, you are ready to start generating text.
 
-Generating text:
+## Generating text:
 
 To generate text we will use the sample.py script.
 
-Run that in the command line in the same folder:
+##### Run that in the command line in the same folder:
 
 1) Run: python sample.py --save_dir savetweets
 
