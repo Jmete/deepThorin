@@ -1,0 +1,5 @@
+I Have not included the tweets for privacy and copyright reasons. 
+
+This file will be where you would put your tweets though!
+
+Make sure it is named input.txt
